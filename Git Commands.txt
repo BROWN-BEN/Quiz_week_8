@@ -1,0 +1,5 @@
+git clone https://github.com/BROWN-BEN/Quiz_week_8.git
+cd Quiz_week_8
+git add --all
+git commit -m 'Code works now'
+git push

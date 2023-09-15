@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-years = []
-co2 = []
-temp = []
+years = list(cur.execute("SELECT year FROM ClimateData"))
+co2 = list(cur.execute("SELECT CO2 FROM ClimateData"))
+temp = list(cur.execute("SELECT temperature FROM ClimateData"))
 
 plt.subplot(2, 1, 1)
 plt.plot(years, co2, 'b--') 
